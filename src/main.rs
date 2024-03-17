@@ -14,7 +14,7 @@ async fn main() {
     let app = Router::new()
     .merge(SwaggerUi::new("/docs")
         .url("/docs/openapi.json", ApiDoc::openapi()))
-        .route("/test", get(|| async { Html("<h1>/test (work)</h1>") }));
+        .route("/test", get(|| async { Html("<h1>/test (work2)</h1>") }));
 
     let listener = TcpListener::bind("127.0.0.1:8000").await.unwrap();
     println!("->> LISTENING on {:?}\n", listener.local_addr());

@@ -13,4 +13,4 @@ utoipa-swagger-ui = { version = "6.0.0", features = ["axum"] }
 
 [dev-dependencies]
 anyhow = "1"
-httpc-test = "0.1.9"
+httpc-test = "0.1.1"
